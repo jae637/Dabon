@@ -3,21 +3,137 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width" , initial-scale="1">
-<title>다본 에스이</title>
+<title>Dabon SE</title>
 <link rel="stylesheet" href="css/bootstrap.css">
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<link rel="stylesheet" href="css/bootstrap-theme.min.css">
 </head>
 <body>
 	<style type="text/css">
 .jumbotron {
-	text-shadow: black 0.2em 0.2em 0.2em;
-	color:white;
+	text-shadow: black 0.03cm 0.03cm 0.03cm;
+	background-color: white;
+	backgroud-size: cover;
+	color: black;
 }
 </style>
-	<div class="container">
-		<div class="jumbotron">
-			<hi class="text-center">(이미지)</hi> <!-- 이미지 넣을 부분 왼쪽 상단 -->
-			<p class="text-center">다본 에스이</p>
+	<style type="text/css">
+a:visited {
+	color: black;
+	text-decoration: none;
+}
+
+a:hover {
+	color: black;
+	text-decoration: none;
+}
+</style>
+	#image { height: 150px; }
+	<div id="top">
+		<div class="row">
+			<a class="text-left" href="index.html" style="cursor: pointer"
+				style="text-decoration : none">
+				<div class="col-sm-3">
+					<!-- 이미지 넣을 부분 왼쪽 상단 -->
+					<img src="images/Mark.PNG" width="520" height="128" alt="DabonSE0" />
+				</div>
+			</a>
 		</div>
 	</div>
+	<!-- 네비게이션 바 -->
+	<nav class="navbar navbar-default">
+		<div class="container-fluid">
+			<div class="collapse navbar-collapse"
+				id="bs-example-navbar-collapse-1">
+				<ui class="nav navbar-nav">
+				<li class="activedown"><a href="#" class="dropdown-toggle"
+					data-toggle="dropdown" role="button" aria-haspopup="true"
+					aria-expanded="false">COMPANY<span class=caret"></span></a>
+					<ul class="dropdown-menu">
+						<li><a href="#">인사말</a></li>
+						<li><a href="#">회사 소개</a></li>
+						<li><a href="#">오시는 길</a></li>
+					</ul></li>
+				<li class="activedown"><a href="#" class="dropdown-toggle"
+					data-toggle="dropdown" role="button" aria-haspopup="true"
+					aria-expanded="false">PRODUCT<span class=caret"></span></a>
+					<ul class="dropdown-menu">
+						<li><a href="#">컨테이너 검색기 시스템</a></li>
+						<li><a href="#">휴대물품 검색기 시스템</a></li>
+						<li><a href="#">금속 탐지 시스템</a></li>
+						<li><a href="#">폭발물 탐지기 시스템</a></li>
+					</ul></li>
+				</ui>
+			</div>
+		</div>
+	</nav>
+
+	<div>
+		<!-- 메인 화면 내용 -->
+		<div>
+			<div class="row">
+				<div id="company_slider" class="carousel slide" data-ride="carousel"
+					height="820px">
+
+					<!-- indicator dot nov -->
+					<ol class="carousel-indicators">
+						<li data-target="#company_slider" data-slide-to="0"></li>
+						<li data-target="#company_slider" data-slide-to="1"></li>
+					</ol>
+					<!-- wrapper for slides -->
+					<div class="carousel-inner" role="listbox">
+						<div class="item active">
+							<img id="image" class="d-block w-100"
+								src="images/background1.jpg" height="820px" alt="background" />
+							<div class="carousel-caption">
+								<h1>AIRPORT</h1>
+							</div>
+						</div>
+						<div class="item">
+							<img id="image" class="d-block w-100"
+								src="images/background2.jpg" height="820px" alt="background" />
+							<div class="carousel-caption">
+								<h1>AIRPORT</h1>
+							</div>
+						</div>
+					</div>
+					<!--  controls or next and prev buttons -->
+					<a class="left carousel-control" href=#company_slider
+						" role="button" data-slide="prev"> <span
+						class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+						<span class="sr-only">Previous</span>
+					</a> <a class="right carousel-control" href=#company_slider
+						" role="button" data-slide="prev"> <span
+						class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+						<span class="sr-only">Previous</span>
+					</a>
+				</div>
+			</div>
+		</div>
+		<!-- 캐러셀 밑 내용 -->
+	</div>
+
+
+
+	<footer style="background-color: #000000; color: #ffffff">
+		<div class="container">
+			<br>
+			<div class="row">
+				<!-- col-sm-3 여기서 3은 간격 -->
+				<div class="col-sm-3" style="text-align: center;">
+					<h4>COMPANY</h4>
+					<h6>DabonSE</h6>
+					<h6>Name</h6>
+				</div>
+				<div class="col-sm-3" style="text-align: center;">
+					<h4>CONTECT</h4>
+					<h6>TEL:031-8041-1592</h6>
+					<h6>Moblie:010-XXXX-XXXX</h6>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+	<script src="js/bootstrap.js"></script>
 </body>
 </html>
