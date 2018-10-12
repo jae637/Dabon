@@ -5,8 +5,8 @@
 }
 
 .dropdown:hover .dropdown-menu {
-    display: block;
-    margin-top: 0;
+	display: block;
+	margin-top: 0;
 }
 
 .jumbotron {
@@ -20,23 +20,20 @@
 	position: abolute;
 	background-color: white top: 0;
 	left: 0;
-	height: 560px;
+	height: 480px;
 	width: 960px;
 }
 
 body {
 	width: 960px;
+	height: 100%;
 	margin: 0 auto;
 }
-#contents{
+
+#contents {
 	width: 720px;
 	margin: 0;
 	font-family: 'Nanum Gothic';
-}
-
-a:visited {
-	color: black;
-	text-decoration: none;
 }
 
 a:visited {
@@ -79,7 +76,7 @@ table>table {
 	border: 1px solid #444444;
 }
 
-#bottom{
+#bottom {
 	
 }
 
@@ -113,4 +110,16 @@ table>table {
 	bottom: 30%;
 	right: 0;
 	left: 0;
+}
+
+/* #footer {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	height: auto;
+} */
+
+#wrapper {
+	position: relative;
+	min-height: 100%;
 }
